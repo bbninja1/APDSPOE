@@ -1,0 +1,32 @@
+<form (submit) = "onSignUp(SignUpform)" #SignUpform = "ngForm">
+
+    <input type = "text"
+    ngModel name = "enteredusername"
+    placeholder="username"
+    required
+    minlength="1"
+    #enteredusername = "ngModel"/>
+
+    <input type = "text" 
+    ngModel name = "enteredfirstname"
+    placeholder="firstname"
+    required
+    minlength="1"
+    #enteredfirstname = "ngModel"/>
+
+    <input type = "text" 
+    ngModel name = "enteredlastname"
+    placeholder="lastname"
+    required
+    minlength="1"
+    #enteredlastname = "ngModel"/>
+
+    <input type = "password" 
+    ngModel name = "enteredpassword"
+    placeholder="Password"
+    required
+    minlength="1"
+    #enteredpassword = "ngModel"/>
+
+    <button type = "submit"> Sign Up </button>
+</form>
