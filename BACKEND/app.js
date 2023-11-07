@@ -11,6 +11,8 @@ mongoose.connect(process.env.MONGODB_URL).then(() => console.log('DB connected')
 
 app.use(cors({ origin: 'http://localhost:4200', optionsSuccessStatus: 200}))
 app.use(express.json());
+app.use(helmet())
+app.use(morgan("tiny"))
 app.use(hsts);
 
 app.use((reg,res,next)=>
